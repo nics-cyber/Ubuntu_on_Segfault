@@ -80,7 +80,7 @@ qemu-img resize "${IMAGE:?}" 32G
 
 ```sh
 cd ; touch start_ubuntu.sh ; echo "cd .vm/ubuntu ; qemu-system-x86_64 \
-    -m 2G \
+    -m 64G \
     -nographic \
     -device virtio-net-pci,netdev=net0 \
     -netdev user,id=net0,hostfwd=tcp::2222-:22 \
